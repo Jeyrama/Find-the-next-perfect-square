@@ -18,3 +18,11 @@ function findNextSquare(sq) {
   let root = Math.sqrt(sq);
   return root % 1 === 0 ? Math.pow(root + 1, 2) : -1;
 }
+
+// or
+
+function findNextSquare(sq) {
+  let sqrt = Math.sqrt(sq);
+  return Number.isInteger(sqrt) ? Math.pow(sqrt + 1, 2) : -1;
+}
+
